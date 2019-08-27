@@ -1,0 +1,5 @@
+class AddUserIdToHaikus < ActiveRecord::Migration[5.2]
+  def change
+    add_reference :haikus, :user, foreign_key: true
+  end
+end

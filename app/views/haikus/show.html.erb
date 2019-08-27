@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="col-md-12 margin-top-5per article-block">
+    <%= image_tag "img01.png", class: 'article-image padding-top-15' %>
+    <h1><%= @haiku.title%></h1>
+    <div class="padding-bottom-15">
+    <%= simple_format @haiku.body %>
+      <p class="text-right">
+        <%= @haiku.created_at.strftime("%Y年%m月%d日 %H時%M分") %>
+      </p>
+    </div>
+    <div>
+      <%= link_to("編集", edit_haiku_path(@haiku), class: 'btn btn-primary', style: 'margin-bottom: 10px; margin-right: 10px') %>
+      <%= link_to("削除", haiku_path(@haiku), method: :delete, data: {confirm: '削除してもいいですか？'}, class: 'btn btn-danger', style: 'margin-bottom: 10px') %>
+    </div>
+  </div>
+</div>
