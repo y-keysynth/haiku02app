@@ -8,11 +8,13 @@
 
 .title {
   font-size: 20px;
+  margin: 20px;
 }
 
 .article-block {
   background-color: white;
   border: 1px solid black;
+  margin: 10px;
 }
 
 .padding-top-15 {
@@ -27,4 +29,10 @@
   width: 100%;
   height: 350px;
   object-fit: cover;
+}
+
+.tate {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
 }
